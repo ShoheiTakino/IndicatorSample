@@ -16,6 +16,8 @@
 		5D5B07F72A34AA060086F48A /* IndicatorSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B07F62A34AA060086F48A /* IndicatorSampleTests.swift */; };
 		5D5B08012A34AA060086F48A /* IndicatorSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B08002A34AA060086F48A /* IndicatorSampleUITests.swift */; };
 		5D5B08032A34AA060086F48A /* IndicatorSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B08022A34AA060086F48A /* IndicatorSampleUITestsLaunchTests.swift */; };
+		5D5B08122A34AA690086F48A /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B08112A34AA690086F48A /* UIViewController+.swift */; };
+		5D5B08152A34AC3F0086F48A /* IndicatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D5B08142A34AC3F0086F48A /* IndicatorType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		5D5B07FC2A34AA060086F48A /* IndicatorSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndicatorSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D5B08002A34AA060086F48A /* IndicatorSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorSampleUITests.swift; sourceTree = "<group>"; };
 		5D5B08022A34AA060086F48A /* IndicatorSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		5D5B08112A34AA690086F48A /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		5D5B08142A34AC3F0086F48A /* IndicatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 		5D5B07DE2A34AA040086F48A /* IndicatorSample */ = {
 			isa = PBXGroup;
 			children = (
+				5D5B08132A34AC2D0086F48A /* Enum */,
+				5D5B080F2A34AA490086F48A /* Extention */,
 				5D5B07DF2A34AA040086F48A /* AppDelegate.swift */,
 				5D5B07E12A34AA040086F48A /* SceneDelegate.swift */,
 				5D5B07E32A34AA040086F48A /* ViewController.swift */,
@@ -125,6 +131,30 @@
 				5D5B08022A34AA060086F48A /* IndicatorSampleUITestsLaunchTests.swift */,
 			);
 			path = IndicatorSampleUITests;
+			sourceTree = "<group>";
+		};
+		5D5B080F2A34AA490086F48A /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				5D5B08102A34AA510086F48A /* UIKit */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		5D5B08102A34AA510086F48A /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				5D5B08112A34AA690086F48A /* UIViewController+.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		5D5B08132A34AC2D0086F48A /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				5D5B08142A34AC3F0086F48A /* IndicatorType.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +289,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D5B07E42A34AA040086F48A /* ViewController.swift in Sources */,
+				5D5B08152A34AC3F0086F48A /* IndicatorType.swift in Sources */,
 				5D5B07E02A34AA040086F48A /* AppDelegate.swift in Sources */,
+				5D5B08122A34AA690086F48A /* UIViewController+.swift in Sources */,
 				5D5B07E22A34AA040086F48A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,12 +8,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
+    // MARK: - IBAction
+    
+    @IBAction private func tappedTurnOnTypeAIndicatorButton() {
+        turnOnIndicator(type: .hello)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) { [self] in
+            turnOffIndicator()
+        }
     }
-
-
+    
+    @IBAction private func tappedTurnOnTypeBIndicatorButton() {
+        turnOnIndicator(type: .goodbye)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 5.0) { [self] in
+            turnOffIndicator()
+        }
+    }
 }
 
